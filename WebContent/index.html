@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Bestill leiebil hos Hertz Bilutleie</title>
 <link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@ brrrrrrrrrrrrrrooooooooooooooooooooooommmmmmmm
 </p>
 
 <div id="header">
-	<img src="..." alt="Hertz Bilutleie" />
+	<img src="pictures/logo.png" alt="Hertz Bilutleie" />
 
 	<form id="login">
 		<p>Gold Plus Rewards</p>
@@ -70,7 +71,7 @@ brrrrrrrrrrrrrrooooooooooooooooooooooommmmmmmm
 		<p>Sted eller flyplasskode</p>
 		<input type="text" />
 		
-		<input type="checkbox" value="return" /> Jeg skal levere kjøretøyet til en annen lokasjon
+		<input type="checkbox" id="return" /> Jeg skal levere kjøretøyet til en annen lokasjon
 		
 		<div id="hidden">
 			<p>Returnerende sted eller flyplasskode</p>
@@ -78,10 +79,10 @@ brrrrrrrrrrrrrrooooooooooooooooooooooommmmmmmm
 		</div>
 		
 		<p>Hentes:</p>
-		<input type="date" min="2016-10-11" /> <input type="time" value="16:00" step="1800" />
+		<input type="datetime-local" min="2016-10-11" />
 		
 		<p>Leveres:</p>
-		<input type="date" min="2016-10-11" /> <input type="time" value="16:00" step="1800" />
+		<input type="datetime-local" min="2016-10-11" />
 		
 		<p>Din alder ved hentetidspunktet:</p>
 		<select>
