@@ -3,10 +3,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title>Insert penis here</title>
 =======
-<title>Bestill leiebil hos Hertz Bilutleie</title>
+=======
 >>>>>>> branch 'master' of https://github.com/PinkCoffee/Oblig3.git
+<title>Bestill leiebil hos Hertz Bilutleie</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -20,59 +23,108 @@ and so it begins
 brrrrrrrrrrrrrrooooooooooooooooooooooommmmmmmm
 </p>
 
-<form>
-	<p>Bestill en bil</p>
-	
-	<p>Sted eller flyplasskode</p>
-	<input type="text" />
-	
-	<input type="checkbox" value="return" /> Jeg skal levere kjøretøyet til en annen lokasjon
-	
-	<p>Returnerende sted eller flyplasskode</p>
-	<input type="text" />
-	
-	<p>Hentes:</p>
-	<input type="date" /> <input type="time" />
-	
-	<p>Leveres:</p>
-	<input type="date" /> <input type="time" />
-	
-	<p>Din alder ved hentetidspunktet:</p>
-	<select>
-		<option value="default">Din alder ved hentetidspunktet *</option>
-		<option value="70">70+ **</option>
-		<option value="30">30-69</option>
-		<option value="29">29</option>
-		<option value="28">28</option>
-		<option value="27">27</option>
-		<option value="26">26</option>
-		<option value="25">25</option>
-		<option value="24">24</option>
-		<option value="23">23</option>
-		<option value="22">22</option>
-		<option value="21">21</option>
-		<option value="20">20</option>
-		<option value="19">19</option>
-		<option value="18">18</option>
-	</select>
-	
-	<p>Biltype:</p>
-	<select>
-		<option value="default">Vis alle</option>
-		<option value="family">Family Collection</option>
-		<option value="green">Green Collection</option>
-		<option value="fun">Fun Collection</option>
-		<option value="prestige">Prestige Collection</option>
-		<option value="family">Family Collection</option>
-		<option value="livery">Varebiler</option>
-	</select>
-	
-	<input type="checkbox" value="rewards" /> Bruk mine Rewardspoeng
-	<input type="checkbox" value="discount" /> Jeg har rabatt (CDP, PC, kupong eller annen kode)
-	
-	<input type="submit" value="Bestill som medlem" />
-	<input type="submit" value="Bestill som gjest" />
-</form>
+<div id="header">
+	<img src="..." alt="Hertz Bilutleie" />
 
+	<form id="login">
+		<p>Gold Plus Rewards</p>
+		<input type="submit" value="Logg inn" />
+	</form>
+
+	<form id="register">
+		<p>Er du ikke medlem?</p>
+		<input type="submit" value="Meld deg inn nå" />
+	</form>
+</div>
+
+<div id="navigation">
+	<ul>
+		<li>Priser og reservasjoner
+			<ul>
+				<li>Få et tilbud - bestill en bil</li>
+				<li>Vis/Endre/Avbestill reservasjon</li>
+				<li>Finn kvittering</li>
+				<li>Leiebetingelser</li>
+			</ul>
+		</li>
+		<li>Spesialtilbud</li>
+		<li>Lokasjoner</li>
+		<li><a href="bilguide.html">Bilguide</a></li>
+		<li>Varebil</li>
+		<li>Produkter og tjenester
+			<ul>
+				<li>Alle produkter og tjenester</li>
+				<li>Bedriftsavtale</li>
+				<li>Bildeling</li>
+				<li>Månedsleie</li>
+				<li>Varebil</li>
+			</ul>
+		</li>
+		<li>Hertz Lojalitetsprogram
+			<ul>
+				<li>Oversikt / Bli medlem</li>
+				<li>Hertz Gold Plus Rewards</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div id="content">
+	<form action="bestill" method="post">
+		<p>Bestill en bil</p>
+		
+		<p>Sted eller flyplasskode</p>
+		<input type="text" />
+		
+		<input type="checkbox" value="return" /> Jeg skal levere kjøretøyet til en annen lokasjon
+		
+		<div id="hidden">
+			<p>Returnerende sted eller flyplasskode</p>
+			<input type="text" />
+		</div>
+		
+		<p>Hentes:</p>
+		<input type="date" min="2016-10-11" /> <input type="time" value="16:00" step="1800" />
+		
+		<p>Leveres:</p>
+		<input type="date" min="2016-10-11" /> <input type="time" value="16:00" step="1800" />
+		
+		<p>Din alder ved hentetidspunktet:</p>
+		<select>
+			<option value="default">Din alder ved hentetidspunktet *</option>
+			<option value="70">70+ **</option>
+			<option value="30">30-69</option>
+			<option value="29">29</option>
+			<option value="28">28</option>
+			<option value="27">27</option>
+			<option value="26">26</option>
+			<option value="25">25</option>
+			<option value="24">24</option>
+			<option value="23">23</option>
+			<option value="22">22</option>
+			<option value="21">21</option>
+			<option value="20">20</option>
+			<option value="19">19</option>
+			<option value="18">18</option>
+		</select>
+		
+		<p>Biltype:</p>
+		<select>
+			<option value="default">Vis alle</option>
+			<option value="family">Family Collection</option>
+			<option value="green">Green Collection</option>
+			<option value="fun">Fun Collection</option>
+			<option value="prestige">Prestige Collection</option>
+			<option value="family">Family Collection</option>
+			<option value="livery">Varebiler</option>
+		</select>
+		
+		<input type="checkbox" value="rewards" /> Bruk mine Rewardspoeng
+		<input type="checkbox" value="discount" /> Jeg har rabatt (CDP, PC, kupong eller annen kode)
+		
+		<input type="submit" value="Bestill som medlem" />
+		<input type="submit" value="Bestill som gjest" />
+	</form>
+</div>
 </body>
 </html>
