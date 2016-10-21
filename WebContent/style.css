@@ -14,9 +14,10 @@ ul {
 }
 
 li a {
-    float: right;
+    float: left;
     display: block;
     padding: 8px;
+    background-color: yellow;
 }
 
 #social {
