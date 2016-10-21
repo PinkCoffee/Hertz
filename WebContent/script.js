@@ -2,16 +2,16 @@
 
 function toggle(id) {
 	let element = document.getElementById(id);
-	if (element.style.display == "none") {
-		element.style.display = "block";
-	} else {
-		element.style.display = "none";
-	} 
+	let attrib = element.style.display;
+	attrib = (attrib == "none") ? "block" : "none";
+	console.log("Toggled!");
 }
 
 function init() {
 	let checkbox = document.getElementById("return");
-	checkbox.addEventListener("click", toggle("hidden"));
+	checkbox.addEventListener("change", toggle("hidden"));
+	console.log("Initiated!");
 }
 
 window.addEventListener("DOMContentLoaded", init);
+console.log("Hi!");
