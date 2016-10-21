@@ -7,14 +7,14 @@ div {
     border: 2px solid black;
 }
 
-ul {
+div > ul {
 	list-style-type: none;
 	margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
 
-li a {
+div > ul > li a {
     float: left;
     display: block;
     padding: 8px;
