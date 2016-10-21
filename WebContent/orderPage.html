@@ -58,10 +58,72 @@
 	</ul>
 </div>
 <p>	__________________slutten av div_______________</p>
-	
-<p> Du har valgt en blå bil klokken 12 på flyplassen <p>
 
-<a href="index.html" alt="Hjem">Hjem </a>
+
+<div id="content">
+	
+	
+	<h1>Bestill en bil</h1>
+	
+	
+	<form action="bestill" method="post">
+		
+		<label for="location">Sted eller flyplasskode:</label>
+		<input type="text" id="location" name="location" value="Bergen"/><br/>
+		
+			
+		<label for="pickup_date">Hentes:</label>
+		<input type="datetime-local" min="2016-10-11" value="2016-10-11" id="pickup_date" /><br/>
+		
+		
+		<label for="deliver_date">Leveres:</label>
+		<input type="datetime-local" min="2016-10-11" value="2016-10-19" id="deliver_date" /><br/>
+		
+		
+		
+		<label for="age_at_pickup">Din alder ved hentetidspunktet:</label>		
+		<select id="age_at_pickup">
+			<option value="default">Din alder ved hentetidspunktet *</option>
+			<option value="70">70+ **</option>
+			<option value="30">30-69</option>
+			<option value="29">29</option>
+			<option value="28">28</option>
+			<option value="27">27</option>
+			<option value="26">26</option>
+			<option value="25">25</option>
+			<option value="24">24</option>
+			<option value="23">23</option>
+			<option value="22" selected="selected">22</option>
+			<option value="21">21</option>
+			<option value="20">20</option>
+			<option value="19">19</option>
+			<option value="18">18</option>
+		</select><br/>
+		
+		<label for="car_type">Biltype:</label>		
+		<select id="car_type">
+			<option value="default">Vis alle</option>
+			<option value="family">Family Collection</option>
+			<option value="green">Green Collection</option>
+			<option value="fun">Fun Collection</option>
+			<option value="prestige" selected="selected">Prestige Collection</option>
+			<option value="family">Family Collection</option>
+			<option value="livery">Varebiler</option>
+		</select><br/>
+		
+		<input type="submit" value="Bekreft bestilling" />
+		
+	</form>
+</div>
+
+<a href="content">Hopp til toppen av hovedinnhold</a><br/>
+<a href="#navigation">Hopp til navigasjon</a><br/>
+<a href="index.html" alt="Hjem">Hjem</a><br/>
+
+
+<p>	__________________slutten av div_______________</p>
+	
+
 
 </body>
 </html>
