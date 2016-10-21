@@ -1,71 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
 <meta charset="ISO-8859-1">
-<title>Bestill leiebil hos Hertz Bilutleie</title>
-<link rel="stylesheet" href="style.css" />
+<title>Hjem - Bestill leiebil</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
+<nav>
+	<a href="#navigation">Hopp til navigasjon</a><br/>
+	<a href="#content">Hopp til hovedinnhold</a><br/><br/>
+</nav>
 
 <div id="header">
-	<img src="pictures/logo.png" alt="Hertz Bilutleie" />
+	<header>
+	<img src="pictures/logo.png" alt="Hertz Bilutleie logo" />
 
 	<form id="login">
-		<p>Gold Plus Rewards</p>
-		<input type="submit" value="Logg inn" />
+		<label for="member_gold">Gold Plus Rewards</label>
+		<input type="submit" value="Logg inn" id="member_gold"/>
 	</form>
 
 	<form id="register">
-		<p>Er du ikke medlem?</p>
-		<input type="submit" value="Meld deg inn nå" />
+		<label for="member_new">Er du ikke medlem?</label>
+		<input type="submit" value="Meld deg inn nå" id="member_new"/>
 	</form>
+	</header>
 </div>
-<p>	__________________slutten av div_______________</p>
 
 
 <div id="navigation">
+	<nav>
 	<ul>
-		<li><a href="notImplemented" > Priser og reservasjoner </a>
-			<ul>
-				<li><a href="notImplemented" > Faa et tilbud - bestill en bil </a></li>
-				<li><a href="notImplemented" > Vis/Endre/Avbestill reservasjon</a></li>
-				<li><a href="notImplemented" > Finn kvittering </a></li>
-				<li><a href="notImplemented" > Leiebetingelser </a></li>
-			</ul>
+		<li class="dropdown"><a href="notImplemented" class="dropbutton" > Priser og reservasjoner </a>
+			<div class="dropdown-content">
+				<a href="notImplemented" > Faa et tilbud - bestill en bil </a>
+				<a href="notImplemented" > Vis/Endre/Avbestill reservasjon</a>
+				<a href="notImplemented" > Finn kvittering </a>
+				<a href="notImplemented" > Leiebetingelser </a>
+			</div>
 		</li>
 		<li><a href="notImplemented" > Spesialtilbud </a></li>
 		<li><a href="notImplemented" > Lokasjoner </a></li>
 		<li><a href="notImplemented">Bilguide</a></li>
 		<li><a href="notImplemented" > Varebil </a></li>
-		<li><a href="notImplemented" > Produkter og tjenester </a>
-			<ul>
-				<li><a href="notImplemented" > Alle produkter og tjenester </a></li>
-				<li><a href="notImplemented" > Bedriftsavtale </a></li>
-				<li><a href="notImplemented" > Bildeling </a></li>
-				<li><a href="notImplemented" > Maanedsleie </a></li>
-				<li><a href="notImplemented" > Varebil </a></li>
-			</ul>
+		<li class="dropdown"><a href="notImplemented" class="dropbutton" > Produkter og tjenester </a>
+			<div class="dropdown-content">
+				<a href="notImplemented" > Alle produkter og tjenester </a>
+				<a href="notImplemented" > Bedriftsavtale </a>
+				<a href="notImplemented" > Bildeling </a>
+				<a href="notImplemented" > Maanedsleie </a>
+				<a href="notImplemented" > Varebil </a>
+			</div>
 		</li>
-		<li><a href="notImplemented" > Hertz Lojalitetsprogram </a>
-			<ul>
-				<li><a href="notImplemented" > Oversikt / Bli medlem </a></li>
-				<li><a href="notImplemented" > Hertz Gold Plus Rewards </a></li>
-			</ul>
+		<li class="dropdown"><a href="notImplemented" class="dropbutton" > Hertz Lojalitetsprogram </a>
+			<div class="dropdown-content">
+				<a href="notImplemented" > Oversikt / Bli medlem </a>
+				<a href="notImplemented" > Hertz Gold Plus Rewards </a>
+			</div>
 		</li>
 	</ul>
+</nav>
 </div>
 
-<p>	__________________slutten av div_______________</p>
-	
-
 <div id="content">
-	<form action="bestill" method="post">
-		<p>Bestill en bil</p>
+	
+	
+	<h1>Bestill en bil</h1>
+	
+	
+	<form action="confirmOrder.html">
 		
-		<p>Sted eller flyplasskode</p>
-		<input type="text" />
+		<label for="location">Sted eller flyplasskode:</label>
+		<input type="text" id="location" name="location"/><br/>
 		
-		<input type="checkbox" id="return" /> Jeg skal levere kjooretooyet til en annen lokasjon
+		<!-- skal vi implemetere?
+		<label for="return">Jeg skal levere kjooretooyet til en annen lokasjon:</label>
+		<input type="checkbox" id="return" name="return"/><br/><br/> 
+		-->
 		
 		<!--
 		<div id="hidden">
@@ -74,14 +86,17 @@
 		</div>
 		-->
 		
-		<p>Hentes:</p>
-		<input type="datetime-local" min="2016-10-11" />
 		
-		<p>Leveres:</p>
-		<input type="datetime-local" min="2016-10-11" />
+		<label for="pickup_date">Hentes (dd.mm.åååå tt:mm):</label>
+		<input type="datetime-local" min="12.11.2016 00:00" id="pickup_date" /><br/>
 		
-		<p>Din alder ved hentetidspunktet:</p>
-		<select>
+		<label for="deliver_date">Leveres (dd.mm.åååå tt:mm):</label>
+		<input type="datetime-local" min="10.11.2016 00:00" id="deliver_date" /><br/>
+		
+		
+		
+		<label for="age_at_pickup">Din alder ved hentetidspunktet:</label>		
+		<select id="age_at_pickup">
 			<option value="default">Din alder ved hentetidspunktet *</option>
 			<option value="70">70+ **</option>
 			<option value="30">30-69</option>
@@ -97,10 +112,11 @@
 			<option value="20">20</option>
 			<option value="19">19</option>
 			<option value="18">18</option>
-		</select>
+		</select><br/>
 		
-		<p>Biltype:</p>
-		<select>
+		
+		<label for="car_type">Biltype:</label>		
+		<select id="car_type">
 			<option value="default">Vis alle</option>
 			<option value="family">Family Collection</option>
 			<option value="green">Green Collection</option>
@@ -108,53 +124,54 @@
 			<option value="prestige">Prestige Collection</option>
 			<option value="family">Family Collection</option>
 			<option value="livery">Varebiler</option>
-		</select>
-		
+		</select><br/>
 				
 		<input type="submit" value="Bestill som medlem" />
 		<input type="submit" value="Bestill som gjest" />
-		
 	</form>
 </div>
-<p>	__________________slutten av div_______________</p>
 
-<img src="pictures/bakgrunnsbil.jpg" alt="Hertz, offisiell leverandoor Norges Idrettsforbund"/>
-<p>	__________________slutten av bilde (sjekk alt)_______________</p>
-
+<nav>
+	<a href="#navigation">Hopp til navigasjon</a><br/>
+	<a href="index.html">Hopp til hjemmesiden</a><br/>
+</nav>
+<img src="pictures/bilde_av_bil.jpg" alt="Bilde av bil"/>
 
 <div id="social">
-	<ul>
-	    <li>
-	    	<a href="notImplemented.html" class="link">
-	    		<img class="origin" src="pictures/thumbnails/mobile_origin.png" alt="Hertz Mobile" />
-	    		<img class="hover" src="pictures/thumbnails/mobile_hover.png" alt="Hertz Mobile" />
-    		</a>
-   		</li>
-	    <li>
-	    	<a href="notImplemented.html" class="link">
-	    		<img class="origin" src="pictures/thumbnails/google_plus_origin.png" alt="Google Plus" />
-	    		<img class="hover" src="pictures/thumbnails/google_plus_hover.png" alt="Google Plus" />
-    		</a>
-   		</li>
-	    <li>
-	    	<a href="notImplemented.html" class="link">
-	    		<img class="origin" src="pictures/thumbnails/youtube_origin.png" alt="YouTube" />
-	    		<img class="hover" src="pictures/thumbnails/youtube_hover.png" alt="YouTube" />
-    		</a>
-   		</li>
-	    <li>
-	    	<a href="notImplemented.html" class="link">
-	    		<img class="origin" src="pictures/thumbnails/tweeter_origin.png" alt="Twitter" />
-	    		<img class="hover" src="pictures/thumbnails/tweeter_hover.png" alt="Twitter" />
-    		</a>
-   		</li>
-	    <li>
-	    	<a href="notImplemented.html" class="link">
-	    		<img class="origin" src="pictures/thumbnails/facebook_origin.png" alt="Facebook" />
-	    		<img class="hover" src="pictures/thumbnails/facebook_hover.png" alt="Facebook" />
-    		</a>
-   		</li>
-	</ul>
+	<nav>
+		<ul>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/mobile_origin.png" alt="Hertz Mobile" />
+		    		<img class="hover" src="pictures/thumbnails/mobile_hover.png" alt="Hertz Mobile" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/google_plus_origin.png" alt="Google Plus" />
+		    		<img class="hover" src="pictures/thumbnails/google_plus_hover.png" alt="Google Plus" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/youtube_origin.png" alt="YouTube" />
+		    		<img class="hover" src="pictures/thumbnails/youtube_hover.png" alt="YouTube" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/tweeter_origin.png" alt="Twitter" />
+		    		<img class="hover" src="pictures/thumbnails/tweeter_hover.png" alt="Twitter" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/facebook_origin.png" alt="Facebook" />
+		    		<img class="hover" src="pictures/thumbnails/facebook_hover.png" alt="Facebook" />
+	    		</a>
+	   		</li>
+		</ul>
+	</nav>
 </div>
 </body>
 </html>
