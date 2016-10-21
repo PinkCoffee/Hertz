@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bestill leiebil hos Hertz Bilutleie</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="header">
+	<img src="pictures/logo.png" alt="Hertz Bilutleie" />
+
+	<form id="login">
+		<p>Gold Plus Rewards</p>
+		<input type="submit" value="Logg inn" />
+	</form>
+
+	<form id="register">
+		<p>Er du ikke medlem?</p>
+		<input type="submit" value="Meld deg inn n�" />
+	</form>
+</div>
+<p>	__________________slutten av div_______________</p>
+
+
+<div id="navigation">
+	<ul>
+		<li><a href="info_page.html" > Priser og reservasjoner </a>
+			<ul>
+				<li><a href="info_page.html" > Faa et tilbud - bestill en bil </a></li>
+				<li><a href="info_page.html" > Vis/Endre/Avbestill reservasjon</a></li>
+				<li><a href="info_page.html" > Finn kvittering </a></li>
+				<li><a href="info_page.html" > Leiebetingelser </a></li>
+			</ul>
+		</li>
+		<li><a href="info_page.html" > Spesialtilbud </a></li>
+		<li><a href="info_page.html" > Lokasjoner </a></li>
+		<li><a href="bilguide.html">Bilguide</a></li>
+		<li><a href="info_page.html" > Varebil </a></li>
+		<li><a href="info_page.html" > Produkter og tjenester </a>
+			<ul>
+				<li><a href="info_page.html" > Alle produkter og tjenester </a></li>
+				<li><a href="info_page.html" > Bedriftsavtale </a></li>
+				<li><a href="info_page.html" > Bildeling </a></li>
+				<li><a href="info_page.html" > Maanedsleie </a></li>
+				<li><a href="info_page.html" > Varebil </a></li>
+			</ul>
+		</li>
+		<li><a href="info_page.html" > Hertz Lojalitetsprogram </a>
+			<ul>
+				<li><a href="info_page.html" > Oversikt / Bli medlem </a></li>
+				<li><a href="info_page.html" > Hertz Gold Plus Rewards </a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<p>	__________________slutten av div_______________</p>
+	
+
+<div id="content">
+	<form action="bestill" method="post">
+		<p>Bestill en bil</p>
+		
+		<p>Sted eller flyplasskode</p>
+		<input type="text" />
+		
+		<input type="checkbox" id="return" /> Jeg skal levere kjooretooyet til en annen lokasjon
+		
+		<div id="hidden">
+			<p>Returnerende sted eller flyplasskode</p>
+			<input type="text" />
+		</div>
+		
+		<p>Hentes:</p>
+		<input type="datetime-local" min="2016-10-11" />
+		
+		<p>Leveres:</p>
+		<input type="datetime-local" min="2016-10-11" />
+		
+		<p>Din alder ved hentetidspunktet:</p>
+		<select>
+			<option value="default">Din alder ved hentetidspunktet *</option>
+			<option value="70">70+ **</option>
+			<option value="30">30-69</option>
+			<option value="29">29</option>
+			<option value="28">28</option>
+			<option value="27">27</option>
+			<option value="26">26</option>
+			<option value="25">25</option>
+			<option value="24">24</option>
+			<option value="23">23</option>
+			<option value="22">22</option>
+			<option value="21">21</option>
+			<option value="20">20</option>
+			<option value="19">19</option>
+			<option value="18">18</option>
+		</select>
+		
+		<p>Biltype:</p>
+		<select>
+			<option value="default">Vis alle</option>
+			<option value="family">Family Collection</option>
+			<option value="green">Green Collection</option>
+			<option value="fun">Fun Collection</option>
+			<option value="prestige">Prestige Collection</option>
+			<option value="family">Family Collection</option>
+			<option value="livery">Varebiler</option>
+		</select>
+		
+		<input type="checkbox" value="rewards" /> Bruk mine Rewardspoeng
+		<input type="checkbox" value="discount" /> Jeg har rabatt (CDP, PC, kupong eller annen kode)
+		
+		<input type="submit" value="Bestill som medlem" />
+		<input type="submit" value="Bestill som gjest" />
+	</form>
+</div>
+<p>	__________________slutten av div_______________</p>
+
+<img src="pictures/bakgrunnsbil.jpg" alt="Hertz, offisiell leverandoor Norges Idrettsforbund"/>
+<p>	__________________slutten av bilde (sjekk alt)_______________</p>
+
+
+<div id="social">
+	<form>
+        <fieldset>
+            <label for="social-email">
+                <input type="text" id="social-email" value="Meld deg på vårt nyhetsbrev" />						
+            </label>
+            <button type="button" class="primary">Meld inn</button>					
+        </fieldset>
+    </form>
+    <ul>
+	    <li><a href="notImplemented"><img src="pictures/thumbnails/mobile_origin.png" alt="Hertz Mobile" /></a></li>
+	    <li><a href="notImplemented"><img src="pictures/thumbnails/google_plus_origin.png" alt="Google Plus" /></a></li>
+	    <li><a href="notImplemented"><img src="pictures/thumbnails/youtube_origin.png" alt="YouTube" /></a></li>
+		<li><a href="notImplemented"><img src="pictures/thumbnails/tweeter_origin.png" alt="Twitter" /></a></li>
+	    <li><a href="notImplemented"><img src="pictures/thumbnails/facebook_origin.png" alt="Facebook" /></a></li>
+	</ul>
+</div>
+</body>
+</html>
