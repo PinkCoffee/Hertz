@@ -3,14 +3,14 @@
 }
 
 div {
-	padding: 20px 0px 20px 0px;
+	padding: 20px 0 20px 0;
     border: 2px solid black;
 }
 
 #navigation ul {
 	list-style-type: none;
-	margin: 0px;
-    padding: 0px;
+	margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
 }
@@ -19,14 +19,14 @@ div {
     float: left;
 }
 
-#navigation li a, .dropbutton {
-    display: inline-block;
+#navigation li a {
+    display: block;
     color: #fff;
     padding: 8px;
 }
 
 #navigation li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #880;
 }
 
 li.dropdown {
@@ -35,17 +35,17 @@ li.dropdown {
 
 .dropdown-content {
     display: none;
+    padding: 0;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #444;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
-    color: black;
+    color: #000;
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    display: inline-block;
     text-align: left;
 }
 
@@ -57,8 +57,8 @@ li.dropdown {
 
 #social ul {
 	list-style-type: none;
-	margin: 0px;
-    padding: 0px;
+	margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
