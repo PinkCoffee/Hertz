@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Bestill leiebil hos Hertz Bilutleie</title>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
@@ -13,21 +13,23 @@
 </nav>
 
 <div id="header">
+	<header>
 	<img src="pictures/logo.png" alt="Hertz Bilutleie logo" />
 
 	<form id="login">
-		<p>Gold Plus Rewards</p>
-		<input type="submit" value="Logg inn" />
+		<label for="member_gold">Gold Plus Rewards</label>
+		<input type="submit" value="Logg inn" id="member_gold"/>
 	</form>
 
 	<form id="register">
-		<p>Er du ikke medlem?</p>
-		<input type="submit" value="Meld deg inn nå" />
+		<label for="member_new">Er du ikke medlem?</label>
+		<input type="submit" value="Meld deg inn nå" id="member_new"/>
 	</form>
+	</header>
 </div>
 
-<nav id=navigation>
-
+<div id=navigation>
+	<nav>
 	<ul>
 		<ul>
 			<li><a href="notImplemented" > Spesialtilbud </a></li>
@@ -51,6 +53,26 @@
 		</li>
 	</ul>
 </nav>	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="content">
 	
