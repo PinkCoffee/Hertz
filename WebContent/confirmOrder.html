@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
+<html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bekreft bestilling</title>
+<title>Bekreft din bestilling</title>
+<link rel="stylesheet" type="text/css" href="css/global.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+
 
 </head>
 <body>
@@ -55,64 +57,52 @@
 </nav>	
 </div>
 
-<div id="content">
-	
-	<h1>Bekreft bestilling av bil</h1>
-	
-	
-	<form action="confirmOrder.html">
-		
-		<label for="location">Sted eller flyplasskode:</label>
-		<input type="text" id="location" name="location" value="Bergen"/><br/>
-		
-			
-		<label for="pickup_date">Hentes (dd.mm.åååå tt:mm):</label>
-		<input type="datetime-local" min="12.11.2016 00:00" value="10.11.2016 12:00" id="pickup_date" /><br/>
-		
-		<label for="deliver_date">Leveres (dd.mm.åååå tt:mm):</label>
-		<input type="datetime-local" min="10.11.2016 00:00" value="12.11.2016 12:00"  id="deliver_date" /><br/>
-		
 
-		<label for="age_at_pickup">Din alder ved hentetidspunktet:</label>		
-		<select id="age_at_pickup">
-			<option value="default">Din alder ved hentetidspunktet *</option>
-			<option value="70">70+ **</option>
-			<option value="30">30-69</option>
-			<option value="29">29</option>
-			<option value="28">28</option>
-			<option value="27">27</option>
-			<option value="26">26</option>
-			<option value="25">25</option>
-			<option value="24">24</option>
-			<option value="23">23</option>
-			<option value="22" selected="selected">22</option>
-			<option value="21">21</option>
-			<option value="20">20</option>
-			<option value="19">19</option>
-			<option value="18">18</option>
-		</select><br/>
-		
-		<label for="car_type">Biltype:</label>		
-		<select id="car_type">
-			<option value="default">Vis alle</option>
-			<option value="family">Family Collection</option>
-			<option value="green">Green Collection</option>
-			<option value="fun">Fun Collection</option>
-			<option value="prestige" selected="selected">Prestige Collection</option>
-			<option value="family">Family Collection</option>
-			<option value="livery">Varebiler</option>
-		</select><br/>
-		
-		<input type="submit" value="Bekreft bestilling" />
-		
-	</form>
-</div>
-<nav>
-	<a href="content">Hopp til toppen av hovedinnhold</a><br/>
-	<a href="#navigation">Hopp til navigasjon</a><br/>
-	<a href="index.html" alt="Hjem">Hjem</a><br/>
-</nav>
-<div id="social">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="content">
+		<h1>Din bestilling:</h1>
+		<table>
+			<tr>
+				<th>Lokasjon</th>
+				<th>Dato for henting</th>
+				<th>Dato for levering</th>
+				<th>Din alder</th>
+				<th>Modell</th>
+				<th>Pris</th>
+			</tr>
+			<tr>
+				<td><p>Bergen(BGO)</p></td>
+				<td><p>29.11.2016</p></td>
+				<td><p>26.12.2016</p></td>
+				<td><p>34</p></td>
+				<td><p>WV Up</p></td>
+				<td><p>5200 kr</p></td>
+			</tr>
+		</table>
+		<form action="orderPage.html">
+			<button type="submit">Endre bestilling</button>
+		</form>
+		<form action="notImplemented.html">
+			<button type="submit">Bekreft bestilling</button>
+		</form>
+	</div>
+	<div id="social">
 	<nav>
 		<ul>
 		    <li>
@@ -148,6 +138,5 @@
 		</ul>
 	</nav>
 </div>
-
 </body>
 </html>

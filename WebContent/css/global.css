@@ -1,0 +1,59 @@
+table.one {
+	margin-bottom: 3em;
+	border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+}
+
+
+th > ul > li {
+	margin-right: -0.25em;
+}
+
+th > ul {
+	list-style-type: none;
+	background-color: #fdf11b;
+	
+}
+
+td, th > ul {
+	text-align: center;
+	width: 10em;
+	padding: 1em;
+}
+
+th {
+	text-align: center;
+	padding: 1em;
+	background-color: #fdf11b;
+	color: black;
+}
+
+tr {
+	height: 1em;
+}
+
+th > ul > li {
+	background-color: #fdf11b;
+}
+
+table tr:nth-child(even) {
+	background-color: white;
+}
+
+table tr:nth-child(odd) {
+	background-color: white;
+}
+
+button {
+	background-color: #fdf11b;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	margin: 2px 2px 2px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
