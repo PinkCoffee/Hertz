@@ -3,29 +3,33 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Bestill leiebil hos Hertz Bilutleie</title>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
-<a href="#navigation">Hopp til navigasjon</a><br/>
-<a href="#content">Hopp til hovedinnhold</a><br/><br/>
+<nav>
+	<a href="#navigation">Hopp til navigasjon</a><br/>
+	<a href="#content">Hopp til hovedinnhold</a><br/><br/>
+</nav>
 
 <div id="header">
+	<header>
 	<img src="pictures/logo.png" alt="Hertz Bilutleie logo" />
 
 	<form id="login">
-		<p>Gold Plus Rewards</p>
-		<input type="submit" value="Logg inn" />
+		<label for="member_gold">Gold Plus Rewards</label>
+		<input type="submit" value="Logg inn" id="member_gold"/>
 	</form>
 
 	<form id="register">
-		<p>Er du ikke medlem?</p>
-		<input type="submit" value="Meld deg inn nå" />
+		<label for="member_new">Er du ikke medlem?</label>
+		<input type="submit" value="Meld deg inn nå" id="member_new"/>
 	</form>
+	</header>
 </div>
 
-<nav id=navigation>
-
+<div id=navigation>
+	<nav>
 	<ul>
 		<ul>
 			<li><a href="notImplemented" > Spesialtilbud </a></li>
@@ -49,10 +53,11 @@
 		</li>
 	</ul>
 </nav>	
-	
+</div>
+
 <div id="content">
 	
-	<h1>Bestill en bil</h1>
+	<h1>Bekreft bestilling av bil</h1>
 	
 	
 	<form action="bestill" method="post">
@@ -102,12 +107,47 @@
 		
 	</form>
 </div>
-
-<a href="content">Hopp til toppen av hovedinnhold</a><br/>
-<a href="#navigation">Hopp til navigasjon</a><br/>
-<a href="index.html" alt="Hjem">Hjem</a><br/>
-
-
+<nav>
+	<a href="content">Hopp til toppen av hovedinnhold</a><br/>
+	<a href="#navigation">Hopp til navigasjon</a><br/>
+	<a href="index.html" alt="Hjem">Hjem</a><br/>
+</nav>
+<div id="social">
+	<nav>
+		<ul>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/mobile_origin.png" alt="Hertz Mobile" />
+		    		<img class="hover" src="pictures/thumbnails/mobile_hover.png" alt="Hertz Mobile" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/google_plus_origin.png" alt="Google Plus" />
+		    		<img class="hover" src="pictures/thumbnails/google_plus_hover.png" alt="Google Plus" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/youtube_origin.png" alt="YouTube" />
+		    		<img class="hover" src="pictures/thumbnails/youtube_hover.png" alt="YouTube" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/tweeter_origin.png" alt="Twitter" />
+		    		<img class="hover" src="pictures/thumbnails/tweeter_hover.png" alt="Twitter" />
+	    		</a>
+	   		</li>
+		    <li>
+		    	<a href="notImplemented.html" class="link">
+		    		<img class="origin" src="pictures/thumbnails/facebook_origin.png" alt="Facebook" />
+		    		<img class="hover" src="pictures/thumbnails/facebook_hover.png" alt="Facebook" />
+	    		</a>
+	   		</li>
+		</ul>
+	</nav>
+</div>
 
 </body>
 </html>
