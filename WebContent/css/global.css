@@ -7,17 +7,17 @@ th, td{
 }
 
 
-li {
+th > ul > li {
 	margin-right: -0.25em;
 }
 
-ul {
+th > ul {
 	list-style-type: none;
 	background-color: #fdf11b;
 	
 }
 
-td, ul {
+td, th > ul {
 	text-align: center;
 	width: 10em;
 	padding: 1em;
@@ -34,7 +34,7 @@ tr {
 	height: 1em;
 }
 
-ul li {
+th > ul > li {
 	background-color: #fdf11b;
 }
 
