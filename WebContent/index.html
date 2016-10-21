@@ -37,7 +37,7 @@
 		</li>
 		<li><a href="notImplemented" > Spesialtilbud </a></li>
 		<li><a href="notImplemented" > Lokasjoner </a></li>
-		<li><a href="notImplemented">Bilguide</a></li>
+		<li><a href="notImplemented"> Bilguide </a></li>
 		<li><a href="notImplemented" > Varebil </a></li>
 		<li><a href="notImplemented" > Produkter og tjenester </a>
 			<ul>
@@ -60,13 +60,21 @@
 	
 
 <div id="content">
-	<h1>Bestill en bil!1</h1>
+	
+	
+	<h1>Bestill en bil</h1>
+	
+	
 	<form action="bestill" method="post">
 		
-		<p>Sted eller flyplasskode</p>
-		<input type="text" />
+		<label for="location">Sted eller flyplasskode:</label>
+		<input type="text" id="location" name="location"/><br/>
 		
-		<input type="checkbox" id="return" /> Jeg skal levere kjooretooyet til en annen lokasjon
+		
+		<label for="return">Jeg skal levere kjooretooyet til en annen lokasjon:</label>
+		<input type="checkbox" id="return" name="return"/><br/><br/> 
+		
+		
 		
 		<!--
 		<div id="hidden">
@@ -75,14 +83,18 @@
 		</div>
 		-->
 		
-		<p>Hentes:</p>
-		<input type="datetime-local" min="2016-10-11" />
 		
-		<p>Leveres:</p>
-		<input type="datetime-local" min="2016-10-11" />
+		<label for="pickup_date">Hentes:</label>
+		<input type="datetime-local" min="2016-10-11" id="pickup_date" /><br/>
 		
-		<p>Din alder ved hentetidspunktet:</p>
-		<select>
+		
+		<label for="deliver_date">Leveres:</label>
+		<input type="datetime-local" min="2016-10-11" id="deliver_date" /><br/>
+		
+		
+		
+		<label for="age_at_pickup">Din alder ved hentetidspunktet:</label>		
+		<select id="age_at_pickup">
 			<option value="default">Din alder ved hentetidspunktet *</option>
 			<option value="70">70+ **</option>
 			<option value="30">30-69</option>
@@ -98,10 +110,13 @@
 			<option value="20">20</option>
 			<option value="19">19</option>
 			<option value="18">18</option>
-		</select>
+		</select><br/>
 		
-		<p>Biltype:</p>
-		<select>
+		
+		
+		
+		<label for="car_type">Biltype:</label>		
+		<select id="car_type">
 			<option value="default">Vis alle</option>
 			<option value="family">Family Collection</option>
 			<option value="green">Green Collection</option>
@@ -109,7 +124,7 @@
 			<option value="prestige">Prestige Collection</option>
 			<option value="family">Family Collection</option>
 			<option value="livery">Varebiler</option>
-		</select>
+		</select><br/>
 		
 				
 		<input type="submit" value="Bestill som medlem" />
@@ -117,9 +132,17 @@
 		
 	</form>
 </div>
+
+
+
+
 <p>	__________________slutten av div_______________</p>
 
 <img src="pictures/bilde_av_bil.jpg" alt="Bilde av bil"/>
+
+
+
+
 <p>	__________________slutten av bilde (sjekk alt)_______________</p>
 
 
