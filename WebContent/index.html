@@ -59,7 +59,7 @@
 	<h1>Bestill en bil</h1>
 	
 	
-	<form action="bestill" method="post">
+	<form action="orderPage.html">
 		
 		<label for="location">Sted eller flyplasskode:</label>
 		<input type="text" id="location" name="location"/><br/>
@@ -77,11 +77,11 @@
 		-->
 		
 		
-		<label for="pickup_date">Hentes:</label>
+		<label for="pickup_date">Hentes (ее/mm/dd tt:mm):</label>
 		<input type="datetime-local" min="2016-10-11" id="pickup_date" /><br/>
 		
 		
-		<label for="deliver_date">Leveres:</label>
+		<label for="deliver_date">Leveres (ее.mm.dd tt:mm):</label>
 		<input type="datetime-local" min="2016-10-11" id="deliver_date" /><br/>
 		
 		
@@ -119,7 +119,6 @@
 				
 		<input type="submit" value="Bestill som medlem" />
 		<input type="submit" value="Bestill som gjest" />
-		
 	</form>
 </div>
 
