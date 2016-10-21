@@ -22,7 +22,7 @@ header, footer {
     text-align: center;
 }
 
-nav {
+#nav {
     float: right;
     max-width: 100%;
     background-color: grey;
