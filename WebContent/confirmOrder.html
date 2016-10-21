@@ -3,17 +3,40 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Bekreft din bestilling</title>
+<link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body>
+<nav class="navigasjon">
+		<a href="index.html">Tilbake til hjemmesiden</a>
+	</nav>
+	<div class="image">
+		<img alt="hetz logo" src="pictures/logo.png">
+	</div>
 	<h1>Din bestilling:</h1>
 	<table>
-	<tr>
-		<th>Lokasjon</th>
-		<th>Dato for henting og levering</th>
-		<th>Din alder</th>
-		<th>Modell</th>
-	</tr>
+		<tr>
+			<th>Lokasjon</th>
+			<th>Dato for henting</th>
+			<th>Dato for levering</th>
+			<th>Din alder</th>
+			<th>Modell</th>
+			<th>Pris</th>
+		</tr>
+		<tr>
+			<td><p>Bergen(BGO)</p></td>
+			<td><p>29.11.2016</p></td>
+			<td><p>26.12.2016</p></td>
+			<td><p>34</p></td>
+			<td><p>WV Up</p></td>
+			<td><p>5200 kr</p></td>
+		</tr>
 	</table>
+	<form action="orderPage.html">
+		<button type="submit">Endre bestilling</button>
+	</form>
+	<form action="notImplemented.html">
+		<button type="submit">Bekreft bestilling</button>
+	</form>
 
 </body>
 </html>
